@@ -1,36 +1,29 @@
 import './styles/style.css';
 import React from 'react';
+import { Router, Route, BrowserRouter} from 'react-router-dom'
 import {intro, link, logo, logo2, bgimg} from './img/index';
+import Divider from '@mui/material/Divider';
+import Header from './Header';
+import News from './News';
 
-class App extends React.Component{
-
-  render() {
-    return(
-      <div class="home">
-
-        <div class="header">
-          <div class="header_logo">
-            <img src={logo} alt="logo" />
-          </div>
-        </div>
+const App = () =>{
+  return(
+  <BrowserRouter>
         
-        <br />
-        <br />
-        <br />
-        <br />
+            <Route path="/" component={aa} />
 
-        <div class="content">
-          <div>
-            <img class="intro" src={intro} alt="introduction" />
-          </div>
-          <div>
-            <img class="link" src={link} alt="link" />
-          </div>
-        </div>
+      </BrowserRouter>
+      )
+}
 
-      </div>
-    )
-  }
+const aa = () =>{
+  return(
+    <div>
+    <h1>
+      画面遷移
+    </h1>
+    </div>
+  )
 }
 
 export default App;
