@@ -1,18 +1,14 @@
 import React from "react";
 import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import { Route } from "react-router-dom";
-import Blog from "./Blog";
+import { Link } from "react-router-dom";
 
 const News = (props) => {
     return(
-        <ListItem button>
-            <Route path={props.path} component={Blog}>
+        <ListItem button component={Link}to={props.to}>
                 <dl>
                     <dt>{props.ymd}</dt>
                     <dd>{props.title}</dd>
                 </dl>
-            </Route>
         </ListItem>
     )
 }
