@@ -1,14 +1,16 @@
 import React from "react";
+import './styles/news.css';
 import ListItem from '@mui/material/ListItem';
 import { Link } from "react-router-dom";
 
 const News = (props) => {
     return(
         <ListItem button component={Link}to={props.to}>
-                <dl>
-                    <dt>{props.ymd}</dt>
-                    <dd>{props.title}</dd>
-                </dl>
+            <div>
+            <img class='linkImg' src={props.img} />
+            <p class='linkTitle'>{props.title}</p>
+            <p class='linkYMD'>{props.ymd}</p>
+            </div>
         </ListItem>
     )
 }

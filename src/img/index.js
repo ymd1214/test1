@@ -3,3 +3,7 @@ export {default as link} from './link.png';
 export {default as logo} from './logo.png';
 export {default as logo2} from './logo2.png';
 export {default as bgimg} from './bgimg.png';
+export {default as sample1} from './sample1.png';
+export {default as sample2} from './sample2.png';
+export {default as sample3} from './sample3.png';
+export {default as sample4} from './sample4.png';
